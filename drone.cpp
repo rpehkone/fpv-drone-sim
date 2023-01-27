@@ -4,6 +4,11 @@ class	drone_fpv_controller {
 		quat rot;
 		float rotation_speed;
 		quat angular_vel;
+		// apparently angular vel supposed to be a vector
+		// https://physics.stackexchange.com/questions/286/how-is-it-that-angular-velocities-are-vectors-while-rotations-arent
+		// https://stackoverflow.com/questions/12053895/converting-angular-velocity-to-quaternion-in-opencv
+		// https://en.wikipedia.org/wiki/List_of_moments_of_inertia
+	
 		float angular_damp;
 		vec3 velocity;
 		float weight;
